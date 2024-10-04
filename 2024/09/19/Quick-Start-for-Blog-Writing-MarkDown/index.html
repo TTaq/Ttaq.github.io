@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1. 搭建github博客1.1 确认github上创建的repository名称若在github上创建的名称为”repositoryName”,则在下一步中，本地创建的文件夹应该与github上创建的名称一致1.2 用系统命令行安装hexo并初始化本地博客文件夹12345$ npm install hexo-cli -g	# 如果没有安装npm, 百度一下其他教程，这个不难，在此不赘述$ hex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quick Start for Blog Writing-MarkDown">
+<meta property="og:url" content="http://example.com/2024/09/19/Quick-Start-for-Blog-Writing-MarkDown/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. 搭建github博客1.1 确认github上创建的repository名称若在github上创建的名称为”repositoryName”,则在下一步中，本地创建的文件夹应该与github上创建的名称一致1.2 用系统命令行安装hexo并初始化本地博客文件夹12345$ npm install hexo-cli -g	# 如果没有安装npm, 百度一下其他教程，这个不难，在此不赘述$ hex">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-09-19T08:43:53.000Z">
+<meta property="article:modified_time" content="2024-09-19T09:13:50.756Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2024/09/19/Quick-Start-for-Blog-Writing-MarkDown/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/09/19/Quick-Start-for-Blog-Writing-MarkDown/","path":"2024/09/19/Quick-Start-for-Blog-Writing-MarkDown/","title":"Quick Start for Blog Writing-MarkDown"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Quick Start for Blog Writing-MarkDown | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E6%90%AD%E5%BB%BAgithub%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.</span> <span class="nav-text">1. 搭建github博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E7%A1%AE%E8%AE%A4github%E4%B8%8A%E5%88%9B%E5%BB%BA%E7%9A%84repository%E5%90%8D%E7%A7%B0"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 确认github上创建的repository名称</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%8B%A5%E5%9C%A8github%E4%B8%8A%E5%88%9B%E5%BB%BA%E7%9A%84%E5%90%8D%E7%A7%B0%E4%B8%BA%E2%80%9DrepositoryName%E2%80%9D-%E5%88%99%E5%9C%A8%E4%B8%8B%E4%B8%80%E6%AD%A5%E4%B8%AD%EF%BC%8C%E6%9C%AC%E5%9C%B0%E5%88%9B%E5%BB%BA%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E5%BA%94%E8%AF%A5%E4%B8%8Egithub%E4%B8%8A%E5%88%9B%E5%BB%BA%E7%9A%84%E5%90%8D%E7%A7%B0%E4%B8%80%E8%87%B4"><span class="nav-number">1.1.0.0.1.</span> <span class="nav-text">若在github上创建的名称为”repositoryName”,则在下一步中，本地创建的文件夹应该与github上创建的名称一致</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E7%94%A8%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%89%E8%A3%85hexo%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 用系统命令行安装hexo并初始化本地博客文件夹</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.2.0.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85hexo-NexT%E4%B8%BB%E9%A2%98"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 下载并安装hexo NexT主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#-1"><span class="nav-number">1.3.0.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-%E6%9B%B4%E6%96%B0%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 更新部署博客页面</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#-2"><span class="nav-number">1.4.0.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%8F%91%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0"><span class="nav-number">2.</span> <span class="nav-text">2. 创建并发布自己的第一篇文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E7%94%A8hexo-new-%E5%91%BD%E4%BB%A4%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E8%84%9A%E6%9C%AC"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 用hexo new 命令创建文章脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#-3"><span class="nav-number">2.1.0.0.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 编辑文章</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#markdown-%E8%AF%AD%E6%B3%95"><span class="nav-number">2.2.0.0.1.</span> <span class="nav-text">markdown 语法</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0-%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 发布文章&#x2F;更新博客</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/19/Quick-Start-for-Blog-Writing-MarkDown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Quick Start for Blog Writing-MarkDown | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Quick Start for Blog Writing-MarkDown
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-09-19 16:43:53 / Modified: 17:13:50" itemprop="dateCreated datePublished" datetime="2024-09-19T16:43:53+08:00">2024-09-19</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="1-搭建github博客"><a href="#1-搭建github博客" class="headerlink" title="1. 搭建github博客"></a>1. 搭建github博客</h1><h2 id="1-1-确认github上创建的repository名称"><a href="#1-1-确认github上创建的repository名称" class="headerlink" title="1.1 确认github上创建的repository名称"></a>1.1 确认github上创建的repository名称</h2><h5 id="若在github上创建的名称为”repositoryName”-则在下一步中，本地创建的文件夹应该与github上创建的名称一致"><a href="#若在github上创建的名称为”repositoryName”-则在下一步中，本地创建的文件夹应该与github上创建的名称一致" class="headerlink" title="若在github上创建的名称为”repositoryName”,则在下一步中，本地创建的文件夹应该与github上创建的名称一致"></a>若在github上创建的名称为”repositoryName”,则在下一步中，本地创建的文件夹应该与github上创建的名称一致</h5><h2 id="1-2-用系统命令行安装hexo并初始化本地博客文件夹"><a href="#1-2-用系统命令行安装hexo并初始化本地博客文件夹" class="headerlink" title="1.2 用系统命令行安装hexo并初始化本地博客文件夹"></a>1.2 用系统命令行安装hexo并初始化本地博客文件夹</h2><h5 id=""><a href="#" class="headerlink" title=""></a></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g	<span class="comment"># 如果没有安装npm, 百度一下其他教程，这个不难，在此不赘述</span></span><br><span class="line">$ hexo init repositoryName  <span class="comment"># 注意这是我的博客名，你要替换成自己的，和github上创建的repo一模一样</span></span><br><span class="line">$ <span class="built_in">cd</span> repositoryName	<span class="comment"># 进入本地的博客文件夹（以下统称“本地博客文件夹”）</span></span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server	<span class="comment"># 打开本地服务器预览</span></span><br></pre></td></tr></table></figure>
+<p>查看是否有新安装的hexo主题博客<a target="_blank" rel="noopener" href="http://localhost:4000/">hexo本地查看</a></p>
+<h2 id="1-3-下载并安装hexo-NexT主题"><a href="#1-3-下载并安装hexo-NexT主题" class="headerlink" title="1.3 下载并安装hexo NexT主题"></a>1.3 下载并安装hexo NexT主题</h2><h5 id="-1"><a href="#-1" class="headerlink" title=""></a></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-theme-next	<span class="comment"># 下载并安装NexT主题</span></span><br></pre></td></tr></table></figure>
+<p>安装好后，打开本地博客文件夹下的config.yml文件,找到”theme”，修改成next<br>theme: next</p>
+<h2 id="1-4-更新部署博客页面"><a href="#1-4-更新部署博客页面" class="headerlink" title="1.4 更新部署博客页面"></a>1.4 更新部署博客页面</h2><h5 id="-2"><a href="#-2" class="headerlink" title=""></a></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean	<span class="comment"># 清空一下缓存，有时候博客页面显示不正常也可以试试这个命令行</span></span><br><span class="line">$ hexo g	<span class="comment"># 是hexo generate的简写，把刚刚做的改动生成更新一下</span></span><br><span class="line">$ hexo server	<span class="comment"># 在本地服务器看看博客有没有更新成NexT主题：https://localhost:4000</span></span><br><span class="line">$ hexo d	<span class="comment"># hexo deploy，如果本地服务器看了没问题就可以输入github账号和密码传到网站上啦</span></span><br></pre></td></tr></table></figure>
+<p>打开浏览器，输入网站名,<a target="_blank" rel="noopener" href="https://repositoryname/">https://repositoryName</a></p>
+<h1 id="2-创建并发布自己的第一篇文章"><a href="#2-创建并发布自己的第一篇文章" class="headerlink" title="2. 创建并发布自己的第一篇文章"></a>2. 创建并发布自己的第一篇文章</h1><h2 id="2-1-用hexo-new-命令创建文章脚本"><a href="#2-1-用hexo-new-命令创建文章脚本" class="headerlink" title="2.1 用hexo new 命令创建文章脚本"></a>2.1 用hexo new 命令创建文章脚本</h2><h6 id="-3"><a href="#-3" class="headerlink" title=""></a></h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post <span class="string">&quot;A Quick Start for Blog Writing-Markdown&quot;</span>	<span class="comment"># 这里引号里面是你的博客名称，这里我写的就是我第一篇博客的名称</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-2-编辑文章"><a href="#2-2-编辑文章" class="headerlink" title="2.2 编辑文章"></a>2.2 编辑文章</h2><h5 id="markdown-语法"><a href="#markdown-语法" class="headerlink" title="markdown 语法"></a><a target="_blank" rel="noopener" href="https://yuzehuiic.github.io/2021/05/29/A-Quick-Start-for-Blog-Writing-Markdown/">markdown 语法</a></h5><h2 id="2-3-发布文章-更新博客"><a href="#2-3-发布文章-更新博客" class="headerlink" title="2.3 发布文章&#x2F;更新博客"></a>2.3 发布文章&#x2F;更新博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo server	<span class="comment"># 先在本地预览一下，这一步也可以跳过，直接到下一步</span></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Dabie_haze/article/details/117407833">原文链接</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/09/19/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-angle-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/09/20/Rust%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" rel="next" title="Rust基础入门">
+                  Rust基础入门 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="网络协议层次TCP&#x2F;IP四层模式 应用层、传输层、网络层、网络接口层TCP&#x2F;IP五层模型 应用层、传输层、网络层、数据链路层、物理层OSI七层模型    应用层 表示层 会话层 传输层 网络层 数据链路层 物理层TCP&#x2F;IP层次对应的协议应用层:HTTP,DNS(域名解析),FTP(文件传输协议)传输层:UDP,TCP网络层:IP(网际协议),ICMP(互联网控制报文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计网八股">
+<meta property="og:url" content="http://example.com/2024/10/02/%E8%AE%A1%E7%BD%91%E5%85%AB%E8%82%A1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="网络协议层次TCP&#x2F;IP四层模式 应用层、传输层、网络层、网络接口层TCP&#x2F;IP五层模型 应用层、传输层、网络层、数据链路层、物理层OSI七层模型    应用层 表示层 会话层 传输层 网络层 数据链路层 物理层TCP&#x2F;IP层次对应的协议应用层:HTTP,DNS(域名解析),FTP(文件传输协议)传输层:UDP,TCP网络层:IP(网际协议),ICMP(互联网控制报文">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-10-02T13:29:13.000Z">
+<meta property="article:modified_time" content="2024-10-03T14:10:36.093Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2024/10/02/%E8%AE%A1%E7%BD%91%E5%85%AB%E8%82%A1/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/10/02/%E8%AE%A1%E7%BD%91%E5%85%AB%E8%82%A1/","path":"2024/10/02/计网八股/","title":"计网八股"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>计网八股 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%B1%82%E6%AC%A1"><span class="nav-number">1.</span> <span class="nav-text">网络协议层次</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TCP%E5%92%8CUDP%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.</span> <span class="nav-text">TCP和UDP的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TCP%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%AF%E9%9D%A0"><span class="nav-number">3.</span> <span class="nav-text">TCP为什么可靠</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%B1%E5%BA%8F%E9%87%8D%E6%8E%92%E3%80%81%E5%BA%94%E7%AD%94%E7%A1%AE%E8%AE%A4"><span class="nav-number">3.1.</span> <span class="nav-text">乱序重排、应答确认</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%A5%E6%96%87%E9%87%8D%E4%BC%A0"><span class="nav-number">3.2.</span> <span class="nav-text">报文重传</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B6%85%E6%97%B6%E9%87%8D%E4%BC%A0"><span class="nav-number">3.2.1.</span> <span class="nav-text">超时重传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E9%87%8D%E4%BC%A0"><span class="nav-number">3.2.2.</span> <span class="nav-text">快速重传</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E8%A7%A3%E5%86%B3"><span class="nav-number">3.3.</span> <span class="nav-text">流量控制(滑动窗口解决)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8E%A7%E5%88%B6%E6%B5%81%E9%87%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="nav-number">3.3.1.</span> <span class="nav-text">滑动窗口控制流量的基本原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6-%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6"><span class="nav-number">3.4.</span> <span class="nav-text">拥塞控制(拥塞控制)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%85%A2%E5%BC%80%E5%A7%8B"><span class="nav-number">3.4.1.</span> <span class="nav-text">慢开始</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%A5%E5%A1%9E%E9%81%BF%E5%85%8D"><span class="nav-number">3.4.2.</span> <span class="nav-text">拥塞避免</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E9%87%8D%E4%BC%A0"><span class="nav-number">3.4.3.</span> <span class="nav-text">快重传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E6%81%A2%E5%A4%8D-%E5%8C%BA%E5%88%AB%E4%B8%A2%E5%A4%B1%E4%B8%AA%E5%88%AB%E6%8A%A5%E6%96%87%E8%BF%98%E6%98%AF%E7%BD%91%E7%BB%9C%E6%8B%A5%E5%A1%9E%EF%BC%8C%E9%98%B2%E6%AD%A2%E8%AF%AF%E5%88%A4"><span class="nav-number">3.4.4.</span> <span class="nav-text">快恢复(区别丢失个别报文还是网络拥塞，防止误判)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E8%BE%93%E5%85%A5URL%E5%90%8E%EF%BC%8C%E6%89%A7%E8%A1%8C%E7%9A%84%E5%85%A8%E8%BF%87%E7%A8%8B-%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">在浏览器中输入URL后，执行的全过程(一次完整的http请求过程)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="nav-number">4.1.</span> <span class="nav-text">1.域名解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%8F%91%E8%B5%B7TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="nav-number">4.2.</span> <span class="nav-text">2.发起TCP的三次握手</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%BB%BA%E7%AB%8BTCP%E8%BF%9E%E6%8E%A5%E5%90%8E%E5%8F%91%E8%B5%B7http%E8%AF%B7%E6%B1%82-http%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6"><span class="nav-number">4.3.</span> <span class="nav-text">3.建立TCP连接后发起http请求(http浏览器缓存机制)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%93%8D%E5%BA%94http%E8%AF%B7%E6%B1%82"><span class="nav-number">4.4.</span> <span class="nav-text">4.服务器响应http请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%B5%8F%E8%A7%88%E5%99%A8%E8%A7%A3%E6%9E%90html%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%B9%B6%E8%AF%B7%E6%B1%82html%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84%E8%B5%84%E6%BA%90-js-css-%E5%9B%BE%E7%89%87%E7%AD%89"><span class="nav-number">4.5.</span> <span class="nav-text">5.浏览器解析html代码，并请求html代码中的资源(js,css,图片等)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E6%96%AD%E5%BC%80TCP%E8%BF%9E%E6%8E%A5-%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="nav-number">4.6.</span> <span class="nav-text">6.断开TCP连接(四次挥手)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%B9%E9%A1%B5%E9%9D%A2%E8%BF%9B%E8%A1%8C%E6%B8%B2%E6%9F%93%E5%91%88%E7%8E%B0%E7%BB%99%E7%94%A8%E6%88%B7"><span class="nav-number">4.7.</span> <span class="nav-text">7.浏览器对页面进行渲染呈现给用户</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">5.</span> <span class="nav-text">HTTP和HTTPS的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTPS%E8%AF%A6%E8%A7%A3"><span class="nav-number">5.1.</span> <span class="nav-text">HTTPS详解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#get-post%E5%8C%BA%E5%88%AB"><span class="nav-number">6.</span> <span class="nav-text">get,post区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cookie%E5%92%8Csession%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">7.</span> <span class="nav-text">cookie和session的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP%E7%8A%B6%E6%80%81%E7%A0%81"><span class="nav-number">8.</span> <span class="nav-text">HTTP状态码</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/02/%E8%AE%A1%E7%BD%91%E5%85%AB%E8%82%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="计网八股 | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          计网八股
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-02 21:29:13" itemprop="dateCreated datePublished" datetime="2024-10-02T21:29:13+08:00">2024-10-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-03 22:10:36" itemprop="dateModified" datetime="2024-10-03T22:10:36+08:00">2024-10-03</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="网络协议层次"><a href="#网络协议层次" class="headerlink" title="网络协议层次"></a>网络协议层次</h1><p>TCP&#x2F;IP四层模式 应用层、传输层、网络层、网络接口层<br>TCP&#x2F;IP五层模型 应用层、传输层、网络层、数据链路层、物理层<br>OSI七层模型    应用层 表示层 会话层 传输层 网络层 数据链路层 物理层<br>TCP&#x2F;IP层次对应的协议<br>应用层:HTTP,DNS(域名解析),FTP(文件传输协议)<br>传输层:UDP,TCP<br>网络层:IP(网际协议),ICMP(互联网控制报文协议),IGMP(互联网组管理协议),RIP</p>
+<h1 id="TCP和UDP的区别"><a href="#TCP和UDP的区别" class="headerlink" title="TCP和UDP的区别"></a>TCP和UDP的区别</h1><p>UDP:对网络通讯质量要求不高，要求网络通讯速度要快的场景<br>特点:1.无连接<br>2.尽最大努力交付，不保证可靠交付，不使用拥塞控制<br>3.面向报文，适合多媒体通信<br>4.支持一对一，一对多，多对一，多对多的交互通信<br>5.首部开销小，8个字节<br>场景：直播，语音<br>TCP:当对网络通讯质量有要求时，比如HTTP，HTTPS，FTP等文件传输协议，POP3，SMTP等邮件传输的协议<br>特点：1.面向连接的<br>2.每一条TCP有且只有两个端点，是一对一关系<br>3.提供可靠交付<br>4.全双工通信，即可传输有可接收<br>5.面向字节流<br>场景：游戏，邮件，信息</p>
+<h1 id="TCP为什么可靠"><a href="#TCP为什么可靠" class="headerlink" title="TCP为什么可靠"></a>TCP为什么可靠</h1><p>乱序重排、应答确认<br>报文重传<br>拥塞控制(接收方受不了)<br>流量控制(网路受不了)</p>
+<h2 id="乱序重排、应答确认"><a href="#乱序重排、应答确认" class="headerlink" title="乱序重排、应答确认"></a>乱序重排、应答确认</h2><p>都跟序号有关，由于网络或多线程等因素，接收方收到的数据段很可能是乱序的，不过，因为每个TCP封装都有序号，接收方重组起来非常容易<br>发送方发送多段报文后，共n个字节，接收方只需要向发送方发一个确认号为n+1的报文即可</p>
+<h2 id="报文重传"><a href="#报文重传" class="headerlink" title="报文重传"></a>报文重传</h2><h3 id="超时重传"><a href="#超时重传" class="headerlink" title="超时重传"></a>超时重传</h3><p>发送方收不到确认的时候用。网速不一样导致传输时每个报文的延时也不一样，TCP会根据报文的往返时间(RTT)自动调整超时重传时间(RTO)。发送方每发一个报文，都会开始计时，如果时间超过了RTO还没收到这个报文段的确认，就会重传该报文</p>
+<h3 id="快速重传"><a href="#快速重传" class="headerlink" title="快速重传"></a>快速重传</h3><p>发送的数据在路上丢失的时候用。接收方收到序号为n的报文，回复确认号为n+1的报文，但是却收到了比n+1大的报文段，于是连续发出了确认号n+1的报文。如果发送方连续三次收到重复的信号，立即重发该报文段，而不管是否超时</p>
+<h2 id="流量控制-滑动窗口解决"><a href="#流量控制-滑动窗口解决" class="headerlink" title="流量控制(滑动窗口解决)"></a>流量控制(滑动窗口解决)</h2><p>应用程序无论是发送数据还是接收数据，都会将数据放入缓冲区，再从缓冲区读取数据。<br>当接收方应用程序处理速度比发送方的发送速度慢，就会造成接收区缓冲区的溢出<br>TCP在三次握手的时候，会协商双方缓冲区window的大小。如果接收方的处理速度慢，接收方就会通过window告诉发送方，实现动态调整，避免溢出</p>
+<h3 id="滑动窗口控制流量的基本原理"><a href="#滑动窗口控制流量的基本原理" class="headerlink" title="滑动窗口控制流量的基本原理"></a>滑动窗口控制流量的基本原理</h3><p>当前的窗口大小为m，假定当前发送方已经发送到第x个字节，接收方期待接收到的下一个字节的序号为n，那么还可以发送的字节数就是y&#x3D;m-(x-n)</p>
+<h2 id="拥塞控制-拥塞控制"><a href="#拥塞控制-拥塞控制" class="headerlink" title="拥塞控制(拥塞控制)"></a>拥塞控制(拥塞控制)</h2><p>慢开始，拥塞避免，快速重传，快速恢复<br>swnd发送窗口 &#x3D; min(cwnd拥塞窗口,rwnd接收窗口)</p>
+<h3 id="慢开始"><a href="#慢开始" class="headerlink" title="慢开始"></a>慢开始</h3><p>开始时cwnd拥塞窗口是以指数型增长的，一直到cwnd等于ssthresh阈值时启动拥塞控制算法</p>
+<h3 id="拥塞避免"><a href="#拥塞避免" class="headerlink" title="拥塞避免"></a>拥塞避免</h3><p>进入拥塞避免阶段，cwnd每次增加1。当出现报文丢失时，丢失的报文重传计时器超时后会被判断出现拥塞，此时需要更改cwnd和ssthresh<br>出现拥塞:<br>1.ssthresh更新为出现拥塞时cwnd数值的一半<br>2.cwnd赋值为1<br>3.重新执行慢开始算法<br>不足之处：当个别报文在网络中丢失，实际网络并未发生拥塞，这将导致发送端超时重传，并误以为网络发送拥塞。用于每次发生拥塞都会导致cwnd设置为1，这严重降低了传输效率</p>
+<h3 id="快重传"><a href="#快重传" class="headerlink" title="快重传"></a>快重传</h3><p>使发送方尽快进行重传，而不是等超时重传计时器超时再重传<br>1.接收方不要等待自己发送数据才进行捎带确认，而是立即发送确认<br>2.即使收到了失序的报文段也需要立即对已收到的报文段发送重复确认<br>3.发送方一旦发送3个连续的重复确认，就将相应的报文段立即重传，而不是等待该报文段的超时重传计时器超时再重传<br>4.对于个别丢失的报文段，发送方不会超时重传，就不会误认为发生了拥塞控制。<br>5.使用快重传使整个网络的吞吐量提高约20%</p>
+<h3 id="快恢复-区别丢失个别报文还是网络拥塞，防止误判"><a href="#快恢复-区别丢失个别报文还是网络拥塞，防止误判" class="headerlink" title="快恢复(区别丢失个别报文还是网络拥塞，防止误判)"></a>快恢复(区别丢失个别报文还是网络拥塞，防止误判)</h3><p>发送端连续接收到三个连续的重复确认报文后确认只是丢失了个别的报文(确认报文可以传回，网络没有拥塞)，此时不需要开启慢开始算法。<br>此时将ssthresh和cwnd赋值为此时的cwnd的一半，然后执行避免拥塞算法</p>
+<h1 id="在浏览器中输入URL后，执行的全过程-一次完整的http请求过程"><a href="#在浏览器中输入URL后，执行的全过程-一次完整的http请求过程" class="headerlink" title="在浏览器中输入URL后，执行的全过程(一次完整的http请求过程)"></a>在浏览器中输入URL后，执行的全过程(一次完整的http请求过程)</h1><h2 id="1-域名解析"><a href="#1-域名解析" class="headerlink" title="1.域名解析"></a>1.域名解析</h2><p>浏览器搜索自己的DNS缓存(维护一张域名与IP地址的对应表)<br>若没有，则搜索操作系统中的DNS缓存<br>若没有，则搜索操作系统中的hosts文件<br>若没有，则操作系统将域名发送到本地域名服务器–(递归查询方式)，本地域名服务器查询自己的DNS缓存，查找成功则返回结果，<br>否则，本地域名服务器向根服务器发起请求，此外，根域名服务器返回com域的顶级域名服务器地址,本地域名服务器向com域的顶级域名服务器发起请求，返回baidu.com权限域名服务器，本地域名服务器向baidu.com权限域名服务器发起请求，得到<a target="_blank" rel="noopener" href="http://www.baidu.com的ip地址,本地域名服务器将得到的ip地址返回给操作系统,同时将自己也将ip地址缓存起来/">www.baidu.com的IP地址,本地域名服务器将得到的IP地址返回给操作系统，同时将自己也将IP地址缓存起来</a></p>
+<h2 id="2-发起TCP的三次握手"><a href="#2-发起TCP的三次握手" class="headerlink" title="2.发起TCP的三次握手"></a>2.发起TCP的三次握手</h2><p>第一次握手:建立连接时，客户端发送syn包(syn&#x3D;j)到服务器，并进入SYN_SEND状态，等待服务器确认<br>第二次握手:服务器收到syn包，必须确认客户的SYN(ack&#x3D;j+1),同时自己也发送一个SYN包(syn&#x3D;k)，即SYN+ACK包，此时服务器进入SYN_RECV状态<br>第三次握手:客户端收到服务器的SYN+ACK包，向服务器发送确认包(ack&#x3D;k+1),此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成第三次握手(防止已经失效的连接请求报文又突然传到了服务器，因而产生错误连接，导致服务器资源白白浪费)</p>
+<h2 id="3-建立TCP连接后发起http请求-http浏览器缓存机制"><a href="#3-建立TCP连接后发起http请求-http浏览器缓存机制" class="headerlink" title="3.建立TCP连接后发起http请求(http浏览器缓存机制)"></a>3.建立TCP连接后发起http请求(http浏览器缓存机制)</h2><h2 id="4-服务器响应http请求"><a href="#4-服务器响应http请求" class="headerlink" title="4.服务器响应http请求"></a>4.服务器响应http请求</h2><p>负载均衡，网站可能会有负载均衡设备来平均分配所有用户的请求，即对工作任务进行平衡，分摊到多个操作单元上执行，如图片服务器，应用服务器等<br>请求处理阅读请求以及他的参数和cookies</p>
+<h2 id="5-浏览器解析html代码，并请求html代码中的资源-js-css-图片等"><a href="#5-浏览器解析html代码，并请求html代码中的资源-js-css-图片等" class="headerlink" title="5.浏览器解析html代码，并请求html代码中的资源(js,css,图片等)"></a>5.浏览器解析html代码，并请求html代码中的资源(js,css,图片等)</h2><p>查看是否为长连接，来觉得是否需要断开tcp连接</p>
+<h2 id="6-断开TCP连接-四次挥手"><a href="#6-断开TCP连接-四次挥手" class="headerlink" title="6.断开TCP连接(四次挥手)"></a>6.断开TCP连接(四次挥手)</h2><p>1.客户端向服务器发送FIN报文，表示不再发送数据，进入FIN-WAIT-1状态<br>2.服务器接收到FIN报文，发送ACK报文，进行CLOSE-WAIT状态<br>3.服务器不再发送数据时，发送FIN报文给客户端，进入LAST-ACK状态<br>4.客户端接收到服务器的FIN报文后，发送ACK报文作为最后确认，进入TIME-WAIT状态，等待一段时间(2MSL)后关闭连接<br>MSL:报文段最大生存时间，它是任何报文段被丢弃在网络内的最长时间<br>为什么是2MSL后关闭连接：<br>1.保证TCP协议的全双工连接能够可靠关闭(第四次挥手有可能会丢失，服务器收不到需要重新请求，若客户端不等待2MSL，则导致客户端收不到服务器的重新请求，处于死锁)<br>2.保证这次连接的重复数据段从网络中消失<br>第二次挥手和第三次挥手不能合并的原因:服务器数据还未传输完成，发送ACK后，等到数据传输完成，然后进行第三次挥手<br>为什么还要挥手第四次：因为第三次挥手有可能丢失，客户端就会一直等待，所以需要第四次挥手确认</p>
+<h2 id="7-浏览器对页面进行渲染呈现给用户"><a href="#7-浏览器对页面进行渲染呈现给用户" class="headerlink" title="7.浏览器对页面进行渲染呈现给用户"></a>7.浏览器对页面进行渲染呈现给用户</h2><h1 id="HTTP和HTTPS的区别"><a href="#HTTP和HTTPS的区别" class="headerlink" title="HTTP和HTTPS的区别"></a>HTTP和HTTPS的区别</h1><p>HTTP：<br>1.HTTP协议目的是规定客户端和服务端数据传输的格式和数据交互行为，并不负责数据传输的细节，它是基于TCP实现。现在使用的版本中默认是持久连接的，也就是多次HTTP请求使用一个TCP连接<br>2.HTTP协议是无状态的，每次HTTP请求都是独立的，任何两个请求之间没有什么必然的联系，但是实际应用中引入了cookie和session机制来关联请求<br>3.方法:get,post,delete,put…</p>
+<p>区别：1.HTTPS请求协议需要CA(证书颁发机构)申请证书<br>2.HTTP是超文本传输协议，信息是明文传输，HTTPS则是具有安全性的TLS加密传输协议<br>3.HTTP和HTTPS使用的是完全不同的连接方式，用的端口也不一样，前者是80后者是443<br>4.HTTP的连接很简单，是无状态的。HTTPS协议是由TLS+HTTP协议构建的可进行加密传输，身份认证的网络协议，比HTTP协议安全。(无状态的意思是其数据包的发送、传输和接收都是相互独立的。无连接的意思是指通信双方都不长久的维持对方的任何信息)</p>
+<h2 id="HTTPS详解"><a href="#HTTPS详解" class="headerlink" title="HTTPS详解"></a>HTTPS详解</h2><p>1.用户在浏览器发送HTTPS请求，默认使用443端口进行连接<br>2.HTTPS使用一套CA数字证书，证书内会附带一个pub公钥，而与之对应的私钥private保留在服务端不公开<br>3.服务端收到请求，返回配置好的包含公钥pub的整数给客户端<br>4.客户端收到证书，校验合法性，主要包含是否在有效期内，证书的域名与请求的域名是否匹配，上一级证书是否有效(递归判断，直到判断到系统内置或浏览器配置好的根证书),如果不通过，则显示HTTPS警告信息，如果通过则继续<br>5.客户端生成一个用于对称加密的随机key，并用证书的公钥pub进行加密，发送给服务端<br>6.服务器收到随机key的密文，使用与公钥key配对的私钥private进行解密，得到客户端真正想要发送的随机key<br>7.服务端使用客户端发送来的随机key对要传输的HTTP数据进行加密，将密文返回到客户端<br>8.客户端使用随机key对称解密密文，得到HTTP数据明文<br>9.后续HTTP请求使用之前交换好的随机key进行对称加密和解密</p>
+<h1 id="get-post区别"><a href="#get-post区别" class="headerlink" title="get,post区别"></a>get,post区别</h1><p>1.get用于请求服务器返回资源，post一般用于表单的提交<br>2.get方法请求参数会拼接在URL上不安全，post方法的请求参数放在请求体中<br>3.get请求有URL长度限制，post对长度无要求<br>4.get请求会被浏览器主动cache，post不会，除非手动设置<br>5.get请求在浏览器反复的回退&#x2F;前进操作是无害的，而post操作则会再次提交表单请求<br>6.get请求在发送过程中会产生一个TCP数据包，post会发送两个TCP数据包。对于get请求，浏览器会把http header和data一并发送出去，服务器响应200，而对于post，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok</p>
+<h1 id="cookie和session的区别"><a href="#cookie和session的区别" class="headerlink" title="cookie和session的区别"></a>cookie和session的区别</h1><p>Cookie存放在客户端浏览器中 Session存放在服务器中<br>cookie的大小受限制，单个cookie保存的数据不能超过4K。很多浏览器都限制一个站点最多保存20个cookie。session的大小一般不受限制<br>工作原理：服务器在第一次收到请求时，开辟一块Session空间，同时生成了一个session id，并通过响应头的Set-Cookie:”JESSIONID&#x3D;XXX”命令，向客户端发送要求设置cookie的响应，客户端收到响应后，在本机客户端设置了一个JESSIONID&#x3D;XXX的cookie信息，该cookie的过期时间为浏览器结束。接下来客户端每次向同一个网站发送请求时，请求头都会带上该cookie信息(包含sessionid)。然后，服务器通过读取请求头中的cookie信息，获取名称为JSESSIONID的值，得到此次请求的session id.在cookie中加入sessionId</p>
+<h1 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h1><p>1** - 信息，服务器收到请求，需要请求者继续执行操作<br>2** - 成功，操作被成功接收并处理<br>3** - 重定向，需要进一步的操作以完成请求<br>4** - 客户端错误，请求包含语法错误或无法完成请求<br>5** - 服务器错误，服务器在处理请求的过程中发生了错误</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/09/20/Rust%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" rel="prev" title="Rust基础入门">
+                  <i class="fa fa-angle-left"></i> Rust基础入门
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/10/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%85%AB%E8%82%A1/" rel="next" title="操作系统八股">
+                  操作系统八股 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
